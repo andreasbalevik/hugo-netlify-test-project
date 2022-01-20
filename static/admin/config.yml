@@ -2,11 +2,19 @@ backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
   repo: andreasbalevik/hugo-test-project
-  
+
+local_backend: true
+
+i18n:
+  structure: multiple_files
+  locales: [nb,en]
+  default_locale: nb
+
 media_folder: static/img
 public_folder: /img
 collections:
   - name: 'blog'
+    i18n: true
     label: 'Blog'
     folder: 'content/blog'
     create: true
