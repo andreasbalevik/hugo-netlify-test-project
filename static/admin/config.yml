@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
-  repo: andreasbalevik/hugo-test-project-with-netlify
+  repo: andreasbalevik/hugo-test-project
   
 media_folder: static/img
 public_folder: /img
