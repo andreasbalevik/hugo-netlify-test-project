@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+{{ range $paginator.Pages }}
+    <a href="{{.Page.URL}}">
+        {{.Params.title}}
+    </a>
+{{ end }}
+
+{{ template "_internal/pagination.html" . }}
+{{ end }}
