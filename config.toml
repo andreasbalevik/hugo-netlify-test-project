@@ -1,0 +1,22 @@
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+baseURL = '/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+DefaultContentLanguage = "nb"
+
+[languages]
+    [languages.nb]
+        title = "Nettside"
+        languageName = "Norsk"
+        weight = 1
+    [languages.en]
+        title = "Webpage"
+        languageName = "English"
+        weight = 2
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5

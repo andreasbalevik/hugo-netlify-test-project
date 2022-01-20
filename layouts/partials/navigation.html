@@ -1,0 +1,17 @@
+{{$selected_language := string .Language}}
+
+<ul>
+    {{ range .Site.Menus.main }}
+    <li>
+        <a href="{{ .URL }}">
+            {{ .Pre }}
+            <span>{{ .Name }}</span>
+        </a>
+    </li>
+    {{end}}
+</ul>
+
+Change to:
+{{ range .Translations }}
+ <a href="{{.URL}}">{{.Language | upper}}</a>
+{{end}}
