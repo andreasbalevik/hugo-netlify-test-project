@@ -1,9 +1,6 @@
 <hr>
-    <header>
-        MENU
-        <br>
-        <nav>
-            {{ partial "navigation.html" . }}
-        </nav>
-    </header>
+Change language to:
+{{ range .Translations }}
+ <a href="{{.URL}}">{{.Language | upper}}</a>
+{{end}}
 <hr>

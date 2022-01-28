@@ -12,15 +12,15 @@
 </head>
 
 <body>
-
+    {{ partial "header.html" . }}
+    
+    <br><br>
     {{ block "main" . }}
     
     {{end}}
+    <br><br>
 
-    <p>All pages:</p>
-    {{ range .Site.Pages}}
-        <a href="{{.URL}}">{{.Title}}</a>
-    {{end}}
+    {{ partial "footer.html" . }}
 
 </body>
 

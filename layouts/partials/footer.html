@@ -1,6 +1,7 @@
 <hr>
-    <footer>
-        FOOTER
-        <!--{{ i18n "contact-info" }}-->
-    </footer>
+    <!--{{ i18n "contact-info" }}-->
+    <p>All pages:</p>
+    {{ range .Site.Pages}}
+    <a href="{{.URL}}">{{.Title}}</a>
+    {{end}}
 <hr>
