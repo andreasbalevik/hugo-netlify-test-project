@@ -1,8 +1,9 @@
 backend:
-  name: github
+  name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
   repo: andreasbalevik/hugo-test-project
 
+publish_mode: editorial_workflow
 local_backend: true
 
 i18n:
@@ -19,6 +20,7 @@ collections:
     folder: 'content/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: content/blog/{{slug}}
     editor:
       preview: false
     fields:
